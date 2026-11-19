@@ -1,0 +1,4 @@
+ruta	proyecto	tipo	estado	fecha	owner	titulo	resumen	codigo
+AGENTS.md	AGENTS					AGENTS.md — Director del cerebro		
+README.md	README					Cerebro del equipo		
+sistemas/cerebro/README.md	sistemas	tecnica		2026-11-19		El cerebro: diseño y decisiones	Por qué este repositorio funciona así. Las reglas que se aplican están en AGENTS.md; aquí se anota el porqué de cada decisión.	docs:AGENTS.md
