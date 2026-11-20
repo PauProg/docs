@@ -3,9 +3,9 @@ tipo: equipo
 actualizado: AAAA-MM-DD
 ---
 
-# <usuario-gitlab>
+# <usuario-github>
 
-> Guía: va en `equipo/<usuario-gitlab>.md`. Es una muestra de dónde está la persona HOY: no es un historial, ni un plan, ni una ficha (sin rol ni contacto). Si contradice al trabajo, manda el trabajo. Se actualiza solo al cambiar de proyecto o de trabajo, o al aparecer o desaparecer un bloqueo. Borra las líneas que empiecen por «Guía:».
+> Guía: va en `equipo/<usuario-github>.md`. Es una muestra de dónde está la persona HOY: no es un historial, ni un plan, ni una ficha (sin rol ni contacto). Si contradice al trabajo, manda el trabajo. Se actualiza solo al cambiar de proyecto o de trabajo, o al aparecer o desaparecer un bloqueo. Borra las líneas que empiecen por «Guía:».
 
 - **Proyecto:** `<proyecto>`
 - **Trabajo:** [`<proyecto>/NNNN-slug`](../proyectos/<proyecto>/trabajos/NNNN-slug/spec.md)

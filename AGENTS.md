@@ -24,7 +24,7 @@ procedimientos/ · plantillas/     pasos y formatos
 ```
 
 ## Leer (el mínimo)
-0. **Para encontrar un documento, busca antes en `indice.tsv`** (`grep -i <palabra> indice.tsv`): cada fila trae ruta, proyecto, tipo, estado, fecha, owner, título, resumen y los ficheros de código que documenta (columna `codigo`, útil para ir de un fichero de código a su nota). No lo leas entero: pesa ~80 KB. Filtra por columna con `awk -F"	"`.
+0. **Para encontrar un documento, busca antes en `indice.tsv`** (`grep -i <palabra> indice.tsv`): cada fila trae ruta, proyecto, tipo, estado, fecha, owner, título, resumen y los ficheros de código que documenta (columna `codigo`, útil para ir de un fichero de código a su nota). No lo leas entero: crece con cada documento. Filtra por columna con `awk -F"	"`.
 1. `README.md` → README del proyecto (o su planner, si buscas un trabajo) → cabecera de la nota. Baja al detalle solo si hace falta.
 2. Lista carpetas antes de abrir ficheros: el nombre ya informa.
 3. Lee las primeras líneas (cabecera y resumen) y no la nota entera.
@@ -74,7 +74,7 @@ procedimientos/ · plantillas/     pasos y formatos
 - Un trabajo `cerrado` no se reabre. Si falla lo entregado: continuación `NNNN.n-<clave1>-<clave2>`, p. ej. `crm/0007.1-firma-jwt`. Si es algo nuevo: número nuevo con `relacionado`.
 - Cabeceras de enlace: `origen`, `continuado_en`, `relacionado`.
 - Rama: `feature/<proyecto>-<nombre del trabajo>`, una por trabajo. El nombre del trabajo ya identifica la rama: no se anota en la spec.
-- Minúsculas, guiones, sin tildes. Fechas ISO. Personas por su usuario de GitLab.
+- Minúsculas, guiones, sin tildes. Fechas ISO. Personas por su usuario de GitHub.
 
 ## Escribir
 - **Norma estricta: todo documento que se cree, se mueva, se renombre o se borre se refleja en `indice.tsv` en el mismo cambio.** No se edita a mano: se ejecuta `node scripts/generar-indice.mjs`. Sin esa fila, el documento no existe para quien busca. El índice se alimenta de la cabecera (`tipo`, `estado`, `codigo`…) y del resumen en cita bajo el título, así que una cabecera incompleta deja una fila inútil. Si no está al día, `comprobar-docs.mjs` avisa de que está desfasado: se ejecuta antes de pedir el commit.

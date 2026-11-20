@@ -2,7 +2,7 @@
 tipo: spec
 estado: borrador
 impacto: comportamiento | contrato | seguridad
-owner: <usuario-gitlab>
+owner: <usuario-github>
 borrador: AAAA-MM-DD
 aprobada:
 planificada:
@@ -53,4 +53,4 @@ cerrado:
 ## Verificación
 - **¿La spec era correcta?** ¿Lo construido resuelve el problema real?
 - **Documentación técnica actualizada:** sí / no, y dónde.
-- **Confirmado por:** <usuario-gitlab>, AAAA-MM-DD
+- **Confirmado por:** <usuario-github>, AAAA-MM-DD

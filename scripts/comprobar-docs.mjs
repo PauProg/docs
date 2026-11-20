@@ -1,4 +1,4 @@
-// Comprobaciones del cerebro. Solo LEE: no escribe ni corrige nada (decisiones D02, D15 y D16).
+// Comprobaciones del cerebro. Solo LEE: no escribe ni corrige nada.
 // Uso, desde la raíz de `docs`:  node scripts/comprobar-docs.mjs
 // Sale con código 1 si encuentra algún problema, y los lista.
 //
@@ -21,7 +21,7 @@ const rel = (ruta) => relative(RAIZ, ruta).split(sep).join('/');
 
 function listarMd(dir, salida = []) {
   for (const e of readdirSync(dir, { withFileTypes: true })) {
-    if (e.name === '.git' || e.name === 'node_modules') continue;
+    if (e.name === '.git' || e.name === 'node_modules' || e.name === '.claude') continue;
     const ruta = join(dir, e.name);
     if (e.isDirectory()) listarMd(ruta, salida);
     else if (e.name.endsWith('.md')) salida.push(ruta);

@@ -1,4 +1,12 @@
 ruta	proyecto	tipo	estado	fecha	owner	titulo	resumen	codigo
 AGENTS.md	AGENTS					AGENTS.md — Director del cerebro		
 README.md	README					Cerebro del equipo		
+procedimientos/resumen-semanal.md	procedimientos	procedimiento		2026-11-20		Generar el resumen semanal	Deja en semanal/AAAA-Wnn.md lo que avanzó el equipo en una semana, con enlace a cada trabajo. Se usa solo cuando alguien lo pide.	
+proyectos/ejemplo-tienda/README.md	ejemplo-tienda	proyecto				ejemplo-tienda	Proyecto ficticio para ver cómo queda un trabajo completo, de la spec al informe. Bórralo al crear el primero real.	
+proyectos/ejemplo-tienda/catalogo.md	ejemplo-tienda	tecnica		2026-11-12		Catálogo: filtro por categoría	Ejemplo ficticio. La página del catálogo filtra por la categoría que llega en la URL (?categoria=). El filtrado vive en filtrarPorCategoria; la página solo pinta el resultado.	tienda:src/catalogo/filtros.ts, tienda:src/catalogo/Catalogo.tsx
+proyectos/ejemplo-tienda/trabajos/0001-filtro-por-categoria/informe.md	ejemplo-tienda	informe				Ahora se puede filtrar el catálogo por categoría	Quien compra ya puede quedarse solo con una categoría del catálogo. La elección va en la dirección de la página, así que sobrevive a una recarga y se puede compartir.	
+proyectos/ejemplo-tienda/trabajos/0001-filtro-por-categoria/plan.md	ejemplo-tienda	plan				Plan: Filtrar el catálogo por categoría	La categoría elegida vive en el parámetro categoria de la URL y una función pura filtra los productos; la página solo pinta. Así recargar y compartir enlaces funciona sin estado extra.	
+proyectos/ejemplo-tienda/trabajos/0001-filtro-por-categoria/spec.md	ejemplo-tienda	spec	cerrado	2026-11-12	usuario-ejemplo	Filtrar el catálogo por categoría	Quien compra no puede acotar el catálogo a una categoría y tiene que recorrerlo entero. Se añade un filtro por categoría para que encuentre antes lo que busca.	
+proyectos/ejemplo-tienda/trabajos/0001-filtro-por-categoria/tasks.md	ejemplo-tienda	tasks				Tareas: Filtrar el catálogo por categoría		
+proyectos/ejemplo-tienda/trabajos/README.md	ejemplo-tienda	planner				Planner de ejemplo-tienda		
 sistemas/cerebro/README.md	sistemas	tecnica		2026-11-19		El cerebro: diseño y decisiones	Por qué este repositorio funciona así. Las reglas que se aplican están en AGENTS.md; aquí se anota el porqué de cada decisión.	docs:AGENTS.md

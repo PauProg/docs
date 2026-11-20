@@ -2,7 +2,7 @@
 tipo: decision
 estado: propuesta | vigente | sustituida | descartada
 fecha: AAAA-MM-DD
-owner: <usuario-gitlab>
+owner: <usuario-github>
 ambito: <proyecto> | <proyecto>, <proyecto> | transversal
 origen:
 relacionado:

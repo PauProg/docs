@@ -20,6 +20,7 @@ Si vienes de Jira: un **trabajo** es la incidencia (su clave es `proyecto/NNNN`)
 ## Proyectos
 | Proyecto | Qué es | Planner | Activos |
 | --- | --- | --- | --- |
+| [ejemplo-tienda](proyectos/ejemplo-tienda/README.md) | Ejemplo ficticio; se borra al crear el primero real | [Planner](proyectos/ejemplo-tienda/trabajos/README.md) | 0 |
 
 ## Primer proyecto
 1. Crea `proyectos/<proyecto>/README.md` desde `plantillas/proyecto.md`.

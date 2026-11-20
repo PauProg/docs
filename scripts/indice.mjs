@@ -41,7 +41,7 @@ export function construirIndice(raiz) {
     const partes = ruta.split('/');
     const proyecto = partes[0] === 'proyectos' ? partes[1] : partes[0].replace(/\.md$/, '');
     const titulo = cuerpo.match(/^# (.+)$/m)?.[1] ?? '';
-    // Resumen: la primera cita (`> …`) del documento; las specs y los planners no la tienen y quedan vacíos.
+    // Resumen: la primera cita (`> …`) del documento; los planners no la tienen y quedan vacíos.
     const resumen = cuerpo.match(/^> (.+)$/m)?.[1] ?? '';
     const fecha = campos.actualizado || campos[campos.estado] || campos.fecha || '';
     filas.push([ruta, proyecto, campos.tipo ?? '', campos.estado ?? '', fecha, campos.owner ?? '',
